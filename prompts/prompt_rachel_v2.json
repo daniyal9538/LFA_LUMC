@@ -1,0 +1,18 @@
+{
+    "system_prompt": "You are a helpful and accurate information extraction assistant.",
+    "query": "From the following medical text extract the following details: 1. identify whether any diagnosis from our list of Rheumatic Diseases is mentioned in the text 2. extract the specific words that indicate the diagnosis.",
+    "instructions": [
+      "Focus on identifying diagnoses that are mentioned by a medical professional within the text.",
+      "- Consider a diagnosis as set, even when the physician states it is a working diagnosis.",
+      "- Do not consider the diagnosis as set when the physician describes it as probable or likely.",
+      "- A previous rheumatic disease diagnosis should also be considered as a diagnosis.",
+      "- If the physician rejects a previous diagnosis, it nullifies the earlier diagnosis.",
+      "- If a patient has an overlap of two diagnoses, mark that as uncertainly positive.",
+      "The list of Rheumatic Diseases that you need to identify diagnoses for includes: 'Rheumatoid arthritis'",
+      "Provide a confidence_level rating (0-10) for the accuracy of the diagnosis extraction, where 10 is the highest confidence and 0 is the lowest.  Consider factors such as the clarity and explicitness of the diagnosis in the text.",
+      "If the diagnosis is not mentioned, indicate 'none' in the output."
+      
+    ],
+    "format_instruction": "The output should be in a json key:value format with the following keys:\n    - \"diagnosis\": (string) The span of text that explicitly mentioned the target diagnosis, or \"none\" if not found.\n    - \"is_diagnosis_given\": (int) 1 if the target diagnosis is explicitly mentioned, 0 otherwise.\n    - \"confidence_level\": (integer) A confidence rating between 0 and 10, inclusive."
+  }
+  

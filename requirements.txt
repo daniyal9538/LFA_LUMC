@@ -1,0 +1,13 @@
+jupyter
+ipython
+httpx
+fonttools
+alembic
+debugpy
+numpy
+pandas
+ollama
+srsly
+numpy
+scikit-learn
+matplotlib
