@@ -6,6 +6,9 @@
 LFA_LUMC is a project focused on using Large Language Models (LLMs) for clinical annotation tasks, specifically tailored for the Leiden University Medical Center (LUMC). The repository contains prompt templates, Jupyter notebooks for experimentation, and related resources to facilitate LLM-based annotation workflows.
 
 Link to publication: https://pubmed.ncbi.nlm.nih.gov/41314910/
+
+For questions or contributions, please contat d.selani@tudelft.nl / daniyal.9538@gmail.com, t.d.maarseveen@lumc.nl
+
 ## Directory Structure
 
 ```
